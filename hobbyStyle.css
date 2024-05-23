@@ -62,6 +62,12 @@ nav ul li a:hover{
     color: rgb(62, 212, 212);
     transition: .4s;
 }
+nav ul li a.active {
+    color: rgb(62, 212, 212);
+    border-bottom: 2px solid rgb(62, 212, 212);
+    transition: border-bottom 0.4s;
+    
+}
 .content{
     position: absolute;
     top: 20%;
