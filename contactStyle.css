@@ -1,0 +1,503 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    width: 100%;
+    font-family: Arial, sans-serif;
+    background-color:  rgb(27, 27, 27);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+
+
+.icons {
+    position: absolute;
+    bottom: 22%; /* Adjust this value to move the icons up or down */
+    padding-left: 80%; /* move horizontally */
+    transform: translateX(-50%);  /* Center horizontally */
+    display: flex;
+    align-items: center; /* Center items horizontally within the column */
+    justify-content: center; /* Center the whole column vertically */
+    flex-direction: column;/* Align items in a column */
+    gap: 0px; /* Add space between icons */
+    
+}
+.icons a ion-icon{
+    font-size: 3rem;
+    color: white;
+}
+
+
+
+
+
+
+
+
+
+
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 45px;
+    padding-left: 8%;
+    padding-right: 8%;
+    
+}
+nav ul li{
+    list-style: none;
+    display: flex;
+}
+nav ul {
+    display: flex;
+}
+span{
+    color: rgb(62, 212, 212);
+}
+.logo{
+    color: white;
+    font-size: 40px;
+    letter-spacing: 1px;
+    cursor: pointer;
+    text-shadow: 3px 3px 6px black; /* Add shadow here */
+}
+nav ul li a{
+    list-style-type: none;
+    display: inline-block;
+    padding: 10px   25px;
+}
+nav ul li a{
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: capitalize;
+    text-shadow: 3px 3px 6px black; /* Add shadow here */
+}
+
+
+
+nav ul li a:hover{
+    color: rgb(62, 212, 212);
+    transition: .4s;
+}
+.content{
+    position: absolute;
+    top: 20%;
+    left: 8%;
+    transform: translateY(20%);
+}
+.main {
+    display: flex;
+    align-items: center; /* Vertically center the child elements */
+}
+
+.details {
+    text-align: center; /* Center the content inside .details */
+}
+
+#number{
+    padding-top: 1cm;
+    color: white;
+    text-align: justify;
+    padding-left: 14cm; /* Add margin to move the number to the right */
+}
+
+#email{
+    padding-top: 0.9cm;
+    color: white;
+    text-align: justify;
+    padding-left: 14cm;
+    
+}
+
+#insta{
+    padding-top: 0.9cm;
+    color: white;
+    text-align: justify;
+    padding-left:14cm; /* Add margin to move the number to the right */
+}
+#facebook{
+    padding-top: 0.9cm;
+    color: white;
+    text-align: justify;
+    padding-left: 14cm; /* Add margin to move the number to the right */
+}
+.contact-info {
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+
+
+
+
+
+span{
+    color: rgb(62, 212, 212);
+}
+
+.details .para {
+    padding-top: 1cm;
+    color: white;
+    text-align: justify;
+    width: 1200px;
+    padding-left: 1%;
+    padding-right: 1%;
+    font-size: 20px;
+    position: relative; /* Add position relative */
+    padding-top: 1cm;
+    padding: 0 auto; /* Center the <p> horizontally */
+    
+}
+
+.details h1 {
+    padding-top: 0cm;
+    color: rgb(62, 212, 212);
+    text-align: justify;
+    width: 1200px;
+    padding-left: 0%;
+    margin-top: 0cm;
+    font-size: 35px;
+}
+/* Styles for the main section */
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height:80vh;
+}
+
+/* Styles for the details box */
+.details {
+    background-color: rgb(27, 27, 27); /* Background color of the box */
+    border-radius: 10px; /* Rounded corners */
+    padding: 20px; /* Padding inside the box */
+    box-shadow: 0 0 10px rgb(62, 212, 212); /* Box shadow for depth */
+    max-width: 1600px; /* Limiting the width of the box */
+    max-height: fit-content;
+    height: 11cm;
+    text-align: center; /* Center the content inside .details */
+}
+
+
+
+
+@media (max-width: 768px){
+
+    .icons{
+        padding-left: 70%;
+    }
+    .icons a ion-icon{
+        font-size: 2rem;
+    }
+    nav {
+        padding-left: 4%;
+        padding-right: 4%;
+    }
+    #number{
+        padding-top: 0.9cm;
+        color: white;
+        text-align: justify;
+        padding-left: 6cm; /* Add margin to move the number to the right */
+        font-size: 16px;
+        
+    }
+    
+    #email{
+        padding-top: 0.4cm;
+        color: white;
+        text-align: justify;
+        padding-left: 6cm;
+        font-size: 16px;
+    }
+    
+    #insta{
+        padding-top: 0.5cm;
+        color: white;
+        text-align: justify;
+        padding-left:6cm; /* Add margin to move the number to the right */
+        font-size: 16px;
+    }
+    #facebook{
+        padding-top: 0.5cm;
+        color: white;
+        text-align: justify;
+        padding-left: 6cm; /* Add margin to move the number to the right */
+        font-size: 16px;
+    }
+    .contact-info {
+        display: flex;
+        flex-direction: column;
+        
+    }
+    
+    
+    .details .para {
+        padding-top: 1cm;
+        color: white;
+        text-align: justify;
+        width: 600px;
+        padding-left: 1%;
+        padding-right: 1%;
+        font-size: 20px;
+        position: relative; /* Add position relative */
+        padding-top: 1cm;
+        padding: 0 auto; /* Center the <p> horizontally */
+        
+    }
+    
+    .details h1 {
+        padding-top: 0cm;
+        color: rgb(62, 212, 212);
+        text-align: justify;
+        width: 1200px;
+        padding-left: 0%;
+        margin-top: 0cm;
+        font-size: 30px;
+    }
+    /* Styles for the main section */
+    .main {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height:80vh;/* adjust between nav n box*/
+        overflow: hidden;
+    }
+    
+    /* Styles for the details box */
+    .details {
+        background-color: rgb(27, 27, 27); /* Background color of the box */
+        border-radius: 10px; /* Rounded corners */
+        padding: 20px; /* Padding inside the box */
+        box-shadow: 0 0 10px rgb(62, 212, 212); /* Box shadow for depth */
+        max-width: 650px; /* Limiting the width of the box */
+        max-height: fit-content;
+        height: 11cm;
+        text-align: center; /* Center the content inside .details */
+    }
+
+
+
+
+}
+
+
+@media (max-width: 576px){
+    .icons{
+        padding-left: 57%;
+        bottom: 15%; /* Adjust this value to move the icons up or down */
+    }
+    .icons a ion-icon{
+        font-size: 2rem;
+    }
+    nav {
+        padding-left: 4%;
+        padding-right: 4%;
+        font-size: 14px;
+    }
+    #number{
+        padding-top: 0.8cm;
+        color: white;
+        text-align: justify;
+        padding-left: 3.8cm; /* Add margin to move the number to the right */
+        font-size: 15px;
+        
+    }
+    
+    #email{
+        padding-top: 0.5cm;
+        color: white;
+        text-align: justify;
+        padding-left: 3.8cm;
+        font-size: 16px;
+    }
+    
+    #insta{
+        padding-top: 0.5cm;
+        color: white;
+        text-align: justify;
+        padding-left:3.8cm; /* Add margin to move the number to the right */
+        font-size: 16px;
+    }
+    #facebook{
+        padding-top: 0.5cm;
+        color: white;
+        text-align: justify;
+        padding-left: 3.8cm; /* Add margin to move the number to the right */
+        font-size: 16px;
+    }
+    .contact-info {
+        display: flex;
+        flex-direction: column;
+        
+    }
+    
+    
+    .details .para {
+        padding-top: 1cm;
+        color: white;
+        text-align: justify;
+        width: 460px;
+        padding-left: 1%;
+        padding-right: 1%;
+        font-size: 17.5px;
+        position: relative; /* Add position relative */
+        padding-top: 1cm;
+        padding: 0 auto; /* Center the <p> horizontally */
+        
+    }
+    
+    .details h1 {
+        padding-top: 0cm;
+        color: rgb(62, 212, 212);
+        text-align: justify;
+        width: 1200px;
+        padding-left: 0%;
+        margin-top: 0cm;
+        font-size: 30px;
+    }
+    /* Styles for the main section */
+    .main {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height:80vh;/* adjust between nav n box*/
+        overflow: hidden;
+    }
+    
+    /* Styles for the details box */
+    .details {
+        background-color: rgb(27, 27, 27); /* Background color of the box */
+        border-radius: 10px; /* Rounded corners */
+        padding: 20px; /* Padding inside the box */
+        box-shadow: 0 0 10px rgb(62, 212, 212); /* Box shadow for depth */
+        max-width: 500px; /* Limiting the width of the box */
+        max-height: fit-content;
+        height: 11cm;
+        text-align: center; /* Center the content inside .details */
+    }
+
+
+
+
+
+}
+
+
+@media (max-width: 428px){
+    .icons{
+        padding-left: 55%;
+        bottom: 15%; /* Adjust this value to move the icons up or down */
+    }
+    .icons a ion-icon{
+        font-size: 1.9rem;
+    }
+
+    nav {
+        flex-direction: column; /* Stack logo and navigation vertically */
+        align-items: center;
+        font-size: 12px;
+    }
+
+    nav ul {
+        flex-direction: row; /* Stack the nav items vertically */
+        padding: 0; /* Remove padding from the ul */
+    }
+
+    nav ul li {
+        padding-top: 20px; /* Add space between the nav items */
+    }
+
+    #number{
+        padding-top: 1.1cm;
+        color: white;
+        text-align: justify;
+        padding-left: 2.5cm; /* Add margin to move the number to the right */
+        font-size: 13px;
+        
+    }
+    
+    #email{
+        padding-top: 0.5cm;
+        color: white;
+        text-align: justify;
+        padding-left: 2.5cm;
+        font-size: 13px;
+    }
+    
+    #insta{
+        padding-top: 0.5cm;
+        color: white;
+        text-align: justify;
+        padding-left:2.5cm; /* Add margin to move the number to the right */
+        font-size: 13px;
+    }
+    #facebook{
+        padding-top: 0.6cm;
+        color: white;
+        text-align: justify;
+        padding-left: 2.5cm; /* Add margin to move the number to the right */
+        font-size: 13px;
+    }
+    .contact-info {
+        display: flex;
+        flex-direction: column;
+        
+    }
+    
+    
+    .details .para {
+        padding-top: 1cm;
+        color: white;
+        text-align: justify;
+        width: 330px;
+        padding-left: 1%;
+        padding-right: 1%;
+        font-size: 15px;
+        position: relative; /* Add position relative */
+        padding-top: 1cm;
+        padding: 0 auto; /* Center the <p> horizontally */
+        
+    }
+    
+    .details h1 {
+        padding-top: 0cm;
+        color: rgb(62, 212, 212);
+        text-align: justify;
+        width: 1200px;
+        padding-left: 0%;
+        margin-top: 0cm;
+        font-size: 25px;
+    }
+    /* Styles for the main section */
+    .main {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height:80vh;/* adjust between nav n box*/
+        overflow: hidden;
+    }
+    
+    /* Styles for the details box */
+    .details {
+        background-color: rgb(27, 27, 27); /* Background color of the box */
+        border-radius: 10px; /* Rounded corners */
+        padding: 20px; /* Padding inside the box */
+        box-shadow: 0 0 10px rgb(62, 212, 212); /* Box shadow for depth */
+        max-width: 365px; /* Limiting the width of the box */
+        max-height: fit-content;
+        height: 11cm;
+        text-align: center; /* Center the content inside .details */
+    }
+
+}

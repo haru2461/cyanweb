@@ -1,0 +1,408 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    width: 100%;
+    font-family: Arial, sans-serif;
+    background-color:  rgb(27, 27, 27);
+    background-size: cover;
+    background-position: center;
+}
+
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 45px;
+    padding-left: 8%;
+    padding-right: 8%;
+}
+
+nav ul li{
+    list-style: none;
+    display: flex;
+}
+
+nav ul {
+    display: flex;
+}
+
+span{
+    color: rgb(62, 212, 212);
+}
+    
+.logo{
+    color: white;
+    font-size: 40px;
+    letter-spacing: 1px;
+    cursor: pointer;
+    text-shadow: 3px 3px 6px black; /* Add shadow here */
+}
+nav ul li a{
+    list-style-type: none;
+    display: inline-block;
+    padding: 10px   25px;
+}
+nav ul li a{
+    list-style-type: none;
+    display: inline-block;
+    padding: 10px 25px;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: capitalize;
+    text-shadow: 3px 3px 6px black; /* Add shadow here */
+}
+nav ul li a:hover{
+    color: rgb(62, 212, 212);
+    transition: .4s;
+}
+.content{
+    position: absolute;
+    top: 20%;
+    left: 8%;
+    transform: translateY(20%);
+}
+.main{
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+    
+}
+
+#game{
+    color: rgb(62, 212, 212);
+    padding-top:0cm;
+    text-align: center;
+    text-shadow: 3px 3px 6px black; /* Add shadow here */
+    
+}
+#anime{
+    color: rgb(62, 212, 212);
+    padding-top: 2cm;
+    text-align: center;
+    text-shadow: 3px 3px 6px black; /* Add shadow here */
+    
+}
+.details .para {
+    padding-top: 2cm;
+    color: white;
+    text-align: justify;
+    width: 1200px;
+    padding-left: 1%;
+    padding-right: 1%;
+    font-size: 25px;
+    position: relative; /* Add position relative */
+    margin-top: 2cm;
+    margin: 0 auto; /* Center the <p> horizontally */
+    
+}
+
+.details h1 {
+    padding-top: 0cm;
+    color: rgb(62, 212, 212);
+    text-align: justify;
+    width: 1200px;
+    padding-left: 0%;
+    margin-top: 0cm;
+    font-size: 35px;
+}
+/* Styles for the main section */
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 115.5vh;
+}
+
+/* Styles for the details box */
+.details {
+    background-color: rgb(27, 27, 27); /* Background color of the box */
+    border-radius: 10px; /* Rounded corners */
+    padding: 20px; /* Padding inside the box */
+    box-shadow: 0 0 10px rgb(62, 212, 212); /* Box shadow for depth */
+    max-width: 1600px; /* Limiting the width of the box */
+    max-height: fit-content;
+    height: 18cm;
+    text-align: center; /* Center the content inside .details */
+}
+
+.details .hobby {
+    display: flex; /* Ensure the images are displayed in a row */
+    justify-content: center; /* Center the images horizontally */
+    padding: 20px; /* Add padding around each image */
+}
+.details a {
+    
+    text-decoration: none; /* Remove underline from links */
+    padding: 25px; /* Add padding around each image */
+}   
+
+.details img {
+    
+    padding-top: 30px;
+    width:100px; /* Adjust the width as needed */
+    height: auto; /* Maintain aspect ratio */
+}
+
+
+
+
+
+
+@media only screen and (max-width: 768px){
+
+    nav {
+        padding-left: 4%;
+        padding-right: 4%;
+    }
+
+    .details .para {
+        padding-top: 2cm;
+        color: white;
+        text-align: justify;
+        width: 600px;
+        padding-left: 1%;
+        padding-right: 1%;
+        font-size: 20px;
+        position: relative; /* Add position relative */
+        padding-top: 20px;
+        margin: 0 auto; /* Center the <p> horizontally */
+        
+    }
+
+    .details h1 {
+        padding-top: 0cm;
+        color: rgb(62, 212, 212);
+        text-align: justify;
+        width: 1200px;
+        padding-left: 0%;
+        margin-top: 0cm;
+        font-size: 30px;
+    }
+   
+    .main {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 87vh;/* to adjust sa between sa nav ug box*/
+        overflow: hidden;
+    }
+
+    #game{
+        font-size: 18px;
+    }
+    #anime{
+        font-size: 18px;
+    }
+
+    /* Styles for the details box */
+    .details {
+        background-color: rgb(27, 27, 27); /* Background color of the box */
+        border-radius: 10px; /* Rounded corners */
+        padding: 20px; /* Padding inside the box */
+        box-shadow: 0 0 10px rgb(62, 212, 212); /* Box shadow for depth */
+        max-width: 650px; /* Limiting the width of the box */
+        max-height: fit-content;
+        height: 15cm;
+        text-align: center; /* Center the content inside .details */
+    }
+    
+    .details .hobby {
+        display: flex; /* Ensure the images are displayed in a row */
+        justify-content: center; /* Center the images horizontally */
+        padding: 25px; /* add padding above the hobby, below the para*/
+        
+    }
+    .details a {
+
+        text-decoration: none; /* Remove underline from links */
+        padding: 15px; /* Add padding around each image */
+    }   
+    
+    .details img {
+        
+        padding-top: 30px;
+        width:75px; /* Adjust the width as needed */
+        height: auto; /* Maintain aspect ratio */
+    }
+
+}
+@media only screen and (max-width: 576px){
+
+    
+    
+    nav {
+        padding-left: 4%;
+        padding-right: 4%;
+        font-size: 14px;
+    }
+    .details .para {
+        padding-top: 2cm;
+        color: white;
+        text-align: justify;
+        width: 460px;
+        padding-left: 1%;
+        padding-right: 1%;
+        font-size: 20px;
+        position: relative; /* Add position relative */
+        padding-top: 20px;
+        margin: 0 auto; /* Center the <p> horizontally */
+        
+    }
+
+    .details h1 {
+        padding-top: 0cm;
+        color: rgb(62, 212, 212);
+        text-align: justify;
+        width: 1200px;
+        padding-left: 0%;
+        margin-top: 0cm;
+        font-size: 30px;
+    }
+   
+    .main {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 80vh;
+        overflow: hidden;
+    }
+
+    #game{
+        font-size: 15px;
+    }
+    #anime{
+        font-size: 15px;
+    }
+
+    /* Styles for the details box */
+    .details {
+        background-color: rgb(27, 27, 27); /* Background color of the box */
+        border-radius: 10px; /* Rounded corners */
+        padding: 20px; /* Padding inside the box */
+        box-shadow: 0 0 10px rgb(62, 212, 212); /* Box shadow for depth */
+        max-width: 500px; /* Limiting the width of the box */
+        max-height: fit-content;
+        height: 14cm;
+        text-align: center; /* Center the content inside .details */
+    }
+    
+    .details .hobby {
+        display: flex; /* Ensure the images are displayed in a row */
+        justify-content: center; /* Center the images horizontally */
+        padding: 28px; /* add padding above the hobby, below the para*/
+        
+    }
+    .details a {
+
+        text-decoration: none; /* Remove underline from links */
+        padding: 10px; /* Add padding around each image */
+    }   
+    
+    .details img {
+        width:70px; /* Adjust the width as needed */
+        
+        padding-top: 10px;
+        height: auto; /* Maintain aspect ratio */
+    }
+    
+
+}
+
+@media only screen and (max-width: 428px){
+
+
+    nav {
+        flex-direction: column; /* Stack logo and navigation vertically */
+        align-items: center;
+        font-size: 12px;
+    }
+
+    nav ul {
+        flex-direction: row; /* Stack the nav items vertically */
+        padding: 0; /* Remove padding from the ul */
+    }
+
+    nav ul li {
+        padding-top: 20px; /* Add space between the nav items */
+    }
+    
+
+
+    .details .para {
+        padding-top: 2cm;
+        color: white;
+        text-align: justify;
+        width: 330px;
+        padding-left: 1%;
+        padding-right: 1%;
+        font-size: 15px;
+        position: relative; /* Add position relative */
+        padding-top: 20px;
+        margin: 0 auto; /* Center the <p> horizontally */
+        
+    }
+
+    .details h1 {
+        padding-top: 0cm;
+        color: rgb(62, 212, 212);
+        text-align: justify;
+        width: 1200px;
+        padding-left: 0%;
+        margin-top: 0cm;
+        font-size: 25px;
+    }
+   
+    .main {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 80vh;/* to adjust sa between sa nav ug box*/
+        overflow: hidden;
+        
+    }
+
+    #game{
+        font-size: 13px;
+    }
+    #anime{
+        font-size: 13px;
+    }
+
+    /* Styles for the details box */
+    .details {
+        background-color: rgb(27, 27, 27); /* Background color of the box */
+        border-radius: 10px; /* Rounded corners */
+        padding: 20px; /* Padding inside the box */
+        box-shadow: 0 0 10px rgb(62, 212, 212); /* Box shadow for depth */
+        max-width: 365px; /* Limiting the width of the box */
+        max-height: fit-content;
+        height: 15cm;
+        text-align: center; /* Center the content inside .details */
+        
+    }
+    
+    .details .hobby {
+        display: flex; /* Ensure the images are displayed in a row */
+        justify-content: center; /* Center the images horizontally */
+        padding: 35px; /* add padding above the hobby, below the para*/
+        
+    }
+    .details a {
+
+        text-decoration: none; /* Remove underline from links */
+        padding: 5px; /* Add padding around each image */
+    }   
+    
+    .details img {
+        width:65px; /* Adjust the width as needed */
+        padding-top: 30px;
+        height: auto; /* Maintain aspect ratio */
+    }
+}

@@ -1,0 +1,275 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    width: 100%;
+    font-family: Arial, sans-serif;
+    background-color:  rgb(27, 27, 27);
+    background-size: cover;
+    background-position: center;
+}
+
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 45px;
+    padding-left: 8%;
+    padding-right: 8%;
+}
+nav ul li{
+    list-style: none;
+    display: flex;
+}
+nav ul {
+    display: flex;
+}
+span{
+    color: rgb(62, 212, 212);
+}
+.logo{
+    color: white;
+    font-size: 40px;
+    letter-spacing: 1px;
+    cursor: pointer;
+    text-shadow: 3px 3px 6px black; /* Add shadow here */
+}
+nav ul li a{
+    list-style-type: none;
+    display: inline-block;
+    padding: 10px   25px;
+}
+nav ul li a{
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: capitalize;
+    text-shadow: 3px 3px 6px black; /* Add shadow here */
+}
+nav ul li a:hover{
+    color: rgb(62, 212, 212);
+    transition: .4s;
+}
+.content{
+    position: absolute;
+    top: 20%;
+    left: 8%;
+    transform: translateY(20%);
+}
+.main{
+    display: flex;
+    align-items: center;
+}
+
+.details p {
+    padding-top: 2cm;
+    color: white;
+    text-align: justify;
+    width: 1200px;
+    padding-left: 1%;
+    padding-right: 1%;
+    font-size: 25px;
+    position: relative; /* Add position relative */
+    margin-top: 2cm;
+    margin: 0 auto; /* Center the <p> horizontally */
+}
+
+.details h1 {
+    padding-top: 0cm;
+    color: rgb(62, 212, 212);
+    text-align: justify;
+    width: 1200px;
+    padding-left: 0%;
+    margin-top: 0cm;
+    font-size: 35px;
+}
+/* Styles for the main section */
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70vh;
+}
+
+/* Styles for the details box */
+.details {
+    background-color: rgb(27, 27, 27); /* Background color of the box */
+    border-radius: 10px; /* Rounded corners */
+    padding: 20px; /* Padding inside the box */
+    box-shadow: 0 0 10px rgb(62, 212, 212); /* Box shadow for depth */
+    max-width: 1600px; /* Limiting the width of the box */
+    max-height: fit-content;
+    height: 9cm;
+    text-align: center; /* Center the content inside .details */
+}
+
+
+
+
+
+
+@media only screen and (max-width: 768px){
+
+    nav {
+        padding-left: 4%;
+        padding-right: 4%;
+    }
+    .details p {
+        padding-top: 1cm;
+        color: white;
+        text-align: justify;
+        width: 600px;
+        padding-left: 1%;
+        padding-right: 1%;
+        font-size: 20px;
+        position: relative; /* Add position relative */
+        margin-top: 2cm;
+        margin: 0 auto; /* Center the <p> horizontally */
+
+    }
+    
+    .details h1 {
+        padding-top: 0cm;
+        color: rgb(62, 212, 212);
+        text-align: justify;
+        width: 1200px;
+        padding-left: 0%;
+        margin-top: 0cm;
+        font-size: 30px;
+    }
+    /* Styles for the main section */
+    .main {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 70vh;/* adjust between nav n box*/
+        overflow: hidden;
+    }
+    
+    /* Styles for the details box */
+    .details {
+        background-color: rgb(27, 27, 27); /* Background color of the box */
+        border-radius: 10px; /* Rounded corners */
+        padding: 20px; /* Padding inside the box */
+        box-shadow: 0 0 10px rgb(62, 212, 212); /* Box shadow for depth */
+        max-width: 650px; /* Limiting the width of the box */
+        max-height: fit-content;
+        height: 9cm;
+        text-align: center; /* Center the content inside .details */
+    }
+}
+@media only screen and (max-width: 576px){
+    nav {
+        padding-left: 4%;
+        padding-right: 4%;
+        font-size: 14px;
+    }
+    .details p {
+        padding-top: 1cm;
+        color: white;
+        text-align: justify;
+        width: 460px;
+        padding-left: 1%;
+        padding-right: 1%;
+        font-size: 20px;
+        position: relative; /* Add position relative */
+        margin-top: 2cm;
+        margin: 0 auto; /* Center the <p> horizontally */
+
+    }
+    
+    .details h1 {
+        padding-top: 0cm;
+        color: rgb(62, 212, 212);
+        text-align: justify;
+        width: 1200px;
+        padding-left: 0%;
+        margin-top: 0cm;
+        font-size: 30px;
+    }
+    /* Styles for the main section */
+    .main {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 70vh;/* adjust between nav n box*/
+        overflow: hidden;
+    }
+    
+    /* Styles for the details box */
+    .details {
+        background-color: rgb(27, 27, 27); /* Background color of the box */
+        border-radius: 10px; /* Rounded corners */
+        padding: 20px; /* Padding inside the box */
+        box-shadow: 0 0 10px rgb(62, 212, 212); /* Box shadow for depth */
+        max-width: 500px; /* Limiting the width of the box */
+        max-height: fit-content;
+        height: 9cm;
+        text-align: center; /* Center the content inside .details */
+    }
+}
+@media only screen and (max-width: 428px){
+    nav {
+        flex-direction: column; /* Stack logo and navigation vertically */
+        align-items: center;
+        font-size: 12px;
+    }
+
+    nav ul {
+        flex-direction: row; /* Stack the nav items vertically */
+        padding: 0; /* Remove padding from the ul */
+    }
+
+    nav ul li {
+        padding-top: 20px; /* Add space between the nav items */
+    }
+
+
+    .details p {
+        padding-top: 1cm;
+        color: white;
+        text-align: justify;
+        width: 330px;
+        padding-left: 1%;
+        padding-right: 1%;
+        font-size: 16px;
+        position: relative; /* Add position relative */
+        margin-top: 2cm;
+        margin: 0 auto; /* Center the <p> horizontally */
+    }
+    
+    .details h1 {
+        padding-top: 0cm;
+        color: rgb(62, 212, 212);
+        text-align: justify;
+        width: 1200px;
+        padding-left: 0%;
+        margin-top: 0cm;
+        font-size: 25px;
+    }
+    /* Styles for the main section */
+    .main {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 70vh;/*adjust between nav n box*/
+        overflow: hidden;
+    }
+    
+    /* Styles for the details box */
+    .details {
+        background-color: rgb(27, 27, 27); /* Background color of the box */
+        border-radius: 10px; /* Rounded corners */
+        padding: 20px; /* Padding inside the box */
+        box-shadow: 0 0 10px rgb(62, 212, 212); /* Box shadow for depth */
+        max-width: 365px; /* Limiting the width of the box */
+        max-height: fit-content;
+        height: 9cm;
+        text-align: center; /* Center the content inside .details */
+    }
+}
